@@ -1,0 +1,4 @@
+# ~/Games is not on every machine
+{{ if not (stat (joinPath .chezmoi.homeDir "Games")) }}
+Games
+{{ end }}
