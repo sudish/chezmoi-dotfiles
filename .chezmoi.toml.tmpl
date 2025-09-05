@@ -1,4 +1,8 @@
+[diff]
+  exclude = ["scripts"]
+[status]
+  exclude = ["scripts"]
 [data]
-{{ if eq .chezmoi.os "linux" -}}
-monitor = { resolution = "{{- output "cat" (joinPath .chezmoi.homeDir ".cache/chezmoi/display-resolution")  | trim -}}" }
+{{- if eq .chezmoi.os "linux" }}
+  monitor = { resolution = "{{- output "cat" (joinPath .chezmoi.homeDir ".cache/chezmoi/display-resolution")  | trim -}}" }
 {{- end }}
