@@ -1,4 +1,4 @@
 [data]
 {{ if eq .chezmoi.os "linux" -}}
-monitor = { resolution = "{{- output (joinPath .chezmoi.homeDir ".local/bin/hypr-display-resolution.sh")  | trim -}}" }
+monitor = { resolution = "{{- output "cat" (joinPath .chezmoi.homeDir ".cache/chezmoi/display-resolution")  | trim -}}" }
 {{- end }}
