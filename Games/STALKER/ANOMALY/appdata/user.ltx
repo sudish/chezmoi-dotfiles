@@ -181,8 +181,8 @@ g_crosshair_weapon_near_texture ui\cursor_cross
 g_crosshair_weapon_near_use_shader on
 g_crouch_toggle on
 g_dead_body_collision actor_only
-g_dispersion_base 2.
-g_dispersion_factor 2.2
+g_dispersion_base 1.7
+g_dispersion_factor 1.7
 g_draw_pickup_item_names 0
 g_dynamic_music off
 g_feel_grenade on
@@ -190,7 +190,7 @@ g_firedir_third_person off
 g_firepos off
 g_firepos_zoom off
 g_freelook_toggle off
-g_game_difficulty gd_stalker
+g_game_difficulty gd_veteran
 g_gunsnd_indoor 0.
 g_gunsnd_indoor_volume 1.
 g_hit_pwr_modif 1.
@@ -332,19 +332,19 @@ r2_sun_depth_near_scale 0.9998
 r2_sun_details off
 r2_sun_far 100.
 r2_sun_focus on
-r2_sun_lumscale 3.
-r2_sun_lumscale_amb 1.15
-r2_sun_lumscale_hemi 1.4
+r2_sun_lumscale 2.2
+r2_sun_lumscale_amb 0.7
+r2_sun_lumscale_hemi 0.8
 r2_sun_near 20.
 r2_sun_near_border 0.75
 r2_sun_quality st_opt_medium
 r2_sun_tsm on
 r2_sun_tsm_bias -0.01
 r2_sun_tsm_proj 0.3
-r2_sunshafts_min 0.01
+r2_sunshafts_min 0.02
 r2_sunshafts_mode volumetric
 r2_sunshafts_quality st_opt_high
-r2_sunshafts_value 0.5
+r2_sunshafts_value 0.51
 r2_terrain_z_prepass off
 r2_tnmp_a 0.15
 r2_tnmp_b 0.5
@@ -357,10 +357,10 @@ r2_tnmp_gamma 0.76667
 r2_tnmp_onoff 0.
 r2_tnmp_w 1.12
 r2_tonemap on
-r2_tonemap_adaptation 6.5
+r2_tonemap_adaptation 2.
 r2_tonemap_amount 1.
-r2_tonemap_lowlum 0.55
-r2_tonemap_middlegray 1.4
+r2_tonemap_lowlum 0.25
+r2_tonemap_middlegray 1.8
 r2_volumetric_lights on
 r2_wait_sleep 0
 r2_water_reflections on
@@ -375,7 +375,7 @@ r3_minmax_sm off
 r3_msaa st_opt_off
 r3_msaa_alphatest st_opt_atest_msaa_dx10_1
 r3_use_dx10_1 on
-r3_volumetric_smoke on
+r3_volumetric_smoke off
 r4_enable_tessellation off
 r4_hdr10_bloom_blur_passes 20
 r4_hdr10_bloom_blur_scale 1.
@@ -423,13 +423,13 @@ r__actor_shadow off
 r__bloom_thresh (0.700000, 0.800000, 0.900000, 0.000000)
 r__bloom_weight (0.330000, 0.330000, 0.330000, 0.000000)
 r__clear_models_on_unload off
-r__color_grading (0.500000, 0.500000, 0.500000)
+r__color_grading (0.725000, 0.725000, 0.525000)
 r__detail_density 0.25
 r__detail_height 0.5
 r__detail_radius 110
 r__dtex_range 50.
 r__enable_grass_shadow off
-r__exposure 1.
+r__exposure 0.62
 r__fakescope 0
 r__framelimit 0
 r__gamma 1.
@@ -442,7 +442,7 @@ r__no_scale_on_fade off
 r__optimize_dynamic_geom 1
 r__optimize_shadow_geom on
 r__optimize_static_geom 1
-r__saturation 1.2
+r__saturation 1.05
 r__supersample 1
 r__tf_aniso 16
 r__tf_mipbias -0.5
@@ -483,7 +483,7 @@ sds_speed_enable on
 sds_zoom_enable on
 shader_param_1 (1.000000, 1.000000, 1.000000, 0.100000)
 shader_param_2 (0.000000, 0.000000, 0.000000, 0.000000)
-shader_param_3 (0.838000, 0.847000, 0.852000, -0.005000)
+shader_param_3 (0.838000, 0.847000, 0.852000, 0.100000)
 shader_param_4 (1.120000, 1.120000, 1.130000, -0.420000)
 shader_param_5 (0.000000, 0.000000, 0.000000, 0.000000)
 shader_param_6 (0.000000, 1.000000, 0.000000, 0.000000)
@@ -528,7 +528,7 @@ ssfx_grass_interactive (1.000000, 8.000000, 2000.000000, 1.000000)
 ssfx_grass_shadows (1.000000, 0.350000, 30.000000, 0.000000)
 ssfx_hud_drops_1 (0.000000, 0.000000, 30.000000, 0.050000)
 ssfx_hud_drops_2 (0.225000, 1.250000, 0.000000, 2.000000)
-ssfx_hud_hemi 0.3
+ssfx_hud_hemi 0.1
 ssfx_il (6.666667, 0.800000, 1.000000, 5.000000)
 ssfx_il_quality 32
 ssfx_il_setup1 (150.000000, 1.000000, 1.000000, 0.000000)
@@ -536,7 +536,7 @@ ssfx_int_grass_params_1 (1.000000, 1.000000, 1.000000, 25.000000)
 ssfx_int_grass_params_2 (1.000000, 5.000000, 0.300000, 2.000000)
 ssfx_is_underground 0
 ssfx_lightsetup_1 (0.500000, 1.000000, 0.000000, 0.000000)
-ssfx_lut (1.000000, 6.000000, 0.000000, 0.000000)
+ssfx_lut (1.000000, 15.000000, 0.000000, 0.000000)
 ssfx_motionblur (6.000000, 1.000000, 0.000000, 1.000000)
 ssfx_pom (16.000000, 12.000000, 0.035000, 0.500000)
 ssfx_pom_refine 0
@@ -555,7 +555,7 @@ ssfx_sss_quality (12.000000, 4.000000, 1.000000, 1.000000)
 ssfx_taa (1.000000, 0.500000, 0.600000, 0.000000)
 ssfx_terrain_grass_align 1
 ssfx_terrain_grass_slope 1.
-ssfx_terrain_offset (0.000000, -0.220000, 0.000000, 1.000000)
+ssfx_terrain_offset (-0.100000, -0.050000, -0.100000, 0.000000)
 ssfx_terrain_pom (12.000000, 20.000000, 0.040000, 1.000000)
 ssfx_terrain_pom_refine 0
 ssfx_terrain_quality (8.000000, 0.000000, 0.000000, 0.000000)
@@ -582,5 +582,5 @@ viewport_near 0.2
 vignette_control (0.000000, 0.000000, 0.000000, 0.000000)
 weapon_sway on
 wpn_aim_toggle off
-wpn_degradation 0.75
+wpn_degradation 1.
 zoom_step_count 3.
