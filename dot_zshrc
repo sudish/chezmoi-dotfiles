@@ -116,18 +116,7 @@ ACK_COLOR_MATCH='bold red'
 # finally initialize the ~/.git file with:
 #   git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status
 #
-# this alias is no longer needed as any git operation with --git-dir will create ~/.git
-# alias c='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-#
-# helper to clone a command's completion
-# from https://unix.stackexchange.com/a/496759
-# compdefas () {
-#   if (($+_comps[$1])); then
-#     compdef $_comps[$1] ${^@[2,-1]}=$1
-#   fi
-# }
-#
-# compdefas git c
+# Check that ~/.git exists with contents "gitdir: /home/sj/.dotfiles"
 
 # aliases
 alias d='dirs -v'
