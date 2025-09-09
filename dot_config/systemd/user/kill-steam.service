@@ -1,0 +1,13 @@
+# Enable with:
+#   systemctl --user daemon-reload
+#   systemctl --user enable kill-steam.service --now
+[Unit]
+Description=Kill Steam so it doesn't delay shutdown
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=/usr/sbin/pkill steam
+
+[Install]
+WantedBy=shutdown.target
