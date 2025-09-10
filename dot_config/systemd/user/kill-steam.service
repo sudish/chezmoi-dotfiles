@@ -7,7 +7,7 @@ Description=Kill Steam so it doesn't delay shutdown
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStop=/usr/sbin/pkill steam
+ExecStop=/usr/sbin/pkill -x steam
 
 [Install]
 WantedBy=shutdown.target
