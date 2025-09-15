@@ -39,7 +39,7 @@
     # rprompt moved here to workaround https://github.com/romkatv/powerlevel10k/issues/175#issuecomment-568770181
     # =========================[ Line #1 ]=========================
     status                  # exit code of the last command
-    command_execution_time  # duration of the last command
+    # command_execution_time  # duration of the last command
     background_jobs         # presence of background jobs
     direnv                  # direnv status (https://direnv.net/)
     asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
