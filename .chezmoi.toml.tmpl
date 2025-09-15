@@ -1,7 +1,8 @@
 [diff]
   exclude = ["scripts"]
+  pager = ""
   command = "git"
-  args = ["diff", "--no-index"]
+  args = ["--no-pager", "diff", "--no-index", "--word-diff=color"]
 [status]
   exclude = ["scripts"]
 [data]
