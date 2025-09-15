@@ -21,5 +21,6 @@ return {
       --   enabled = false,
       -- },
     },
+    statuscolumn = { enabled = true },
   },
 }
