@@ -18,7 +18,7 @@
 font-family = 'CaskaydiaMono Nerd Font'
 font-size = 10
 alpha-blending = linear-corrected
-theme = tokyonight
+theme = TokyoNight
 # Show a sizing overlay when window is resized
 resize-overlay = never
 # Run everything from a single ghostty process
