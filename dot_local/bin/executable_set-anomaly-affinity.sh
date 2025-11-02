@@ -1,7 +1,7 @@
 #!/bin/sh
 
 CORES=0-7       # cores to use
-START_SECS=45   # wait for Anomaly to set its own cpu mask
+WAIT_SECS=45    # wait for Anomaly to set its own cpu mask
 MAX_SECS=90     # time before we give up on Anomaly startup
 
 (sleep $MAX_SECS && kill -USR1 $$) &
@@ -12,6 +12,6 @@ while ! pgrep AnomalyDX11; do
 done
 
 # Wait for Anomaly to set affinity to core #0 on startup
-sleep $START_SECS
+sleep $WAIT_SECS
 
 taskset -cp $CORES $(pgrep AnomalyDX11)
