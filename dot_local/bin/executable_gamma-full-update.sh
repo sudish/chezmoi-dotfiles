@@ -13,21 +13,23 @@ MO2_SECTION=v1ld
 MO2_SEPARATOR="${MO2_SECTION}_separator"
 
 BASE="${HOME}/Games/STALKER"
-TMP="${BASE}/tmp"
 ANOMALY="${BASE}/ANOMALY"
 APPDATA="${ANOMALY}/appdata"
 GAMMA="${BASE}/GAMMA"
 MODS="${GAMMA}/mods"
 MODLIST="${GAMMA}/profiles/v1ld/modlist.txt"
+CACHE="${BASE}/gamma-launcher-cache"
+TMP="${BASE}/tmp"
 
-[[ -d $BASE ]] || die "$BASE not a directory"
+[[ -d $BASE ]]    || die "$BASE not a directory"
 [[ -d $ANOMALY ]] || die "$ANOMALY not a directory"
 [[ -d $APPDATA ]] || die "$APPDATA not a directory"
-[[ -d $GAMMA ]] || die "$GAMMA not a directory"
-[[ -d $MODS ]] || die "$MODS not a directory"
+[[ -d $GAMMA ]]   || die "$GAMMA not a directory"
+[[ -d $MODS ]]    || die "$MODS not a directory"
 [[ -r $USERLTX ]] || die "$USERLTX not a readable file"
 [[ -r $MODLIST ]] || die "$MODLIST not a readable file"
-[[ -d $TMP ]] || mkdir -p "$TMP" || die "couldn't mkdir $TMP"
+[[ -d $CACHE ]]   || mkdir -p "$CACHE" || die "couldn't mkdir $CACHE"
+[[ -d $TMP ]]     || mkdir -p "$TMP"   || die "couldn't mkdir $TMP"
 
 grep "$MO2_SEPARATOR" "$MODLIST" || die "$MODLIST doesn't have a $MO2_SEPARATOR line"
 
@@ -46,9 +48,9 @@ rm -f "${ANOMALY}"/bin/AnomalyDX11*.exe   # so new exes do not overwrite through
 # force a def update as Grok sometimes doesn't bump the version number though adding new mods
 rm -f "${BASE}/GAMMA/.Grok's Modpack Installer/version.txt"
 
-gamma-launcher full-install --anomaly "${HOME}/Games/STALKER/ANOMALY" \
-                            --gamma "${HOME}/Games/STALKER/GAMMA" \
-                            --cache-directory "${HOME}/Games/STALKER/gamma-launcher-cache"
+gamma-launcher full-install --anomaly "${ANOMALY}" \
+                            --gamma "${GAMMA}" \
+                            --cache-directory "${CACHE}"
 
 mv "${TMP}"/* "$MODS"
 [[ -f $TMP/user.ltx ]] && mv "${TMP}/user.ltx" "${APPDATA}/user.ltx"
