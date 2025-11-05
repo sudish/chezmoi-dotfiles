@@ -1,0 +1,6 @@
+# directory paths given names so you can refer to them as ~name 
+d=~/Downloads
+g=~/Games/STALKER/GAMMA
+m=$g/mods
+a=~/Games/STALKER/ANOMALY
+ap=$a/appdata
