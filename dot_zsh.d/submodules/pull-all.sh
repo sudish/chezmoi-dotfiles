@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-function clone_or_update {
+clone_or_update() {
   dir=$1
   remote=$2
 

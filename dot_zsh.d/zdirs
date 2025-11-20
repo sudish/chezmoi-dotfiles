@@ -1,5 +1,8 @@
-# directory paths given names so you can refer to them as ~name 
+# directory paths given names to enable ~name 
 d=~/Downloads
+s=~/src
+
+# STALKER GAMMA
 g=~/Games/STALKER/GAMMA
 m=$g/mods
 a=~/Games/STALKER/ANOMALY

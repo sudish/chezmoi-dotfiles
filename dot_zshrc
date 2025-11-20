@@ -112,10 +112,7 @@ ACK_COLOR_MATCH='bold red'
 #   mv dotfiles/.* $HOME
 # this last step may need help like `cp -a dotfiles/.config/* .config` etc
 #
-# finally initialize the ~/.git file with:
-#   git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status
-#
-# Check that ~/.git exists with contents "gitdir: /home/sj/.dotfiles"
+# echo "gitdir: /home/sj/.dotfiles" > ~/.git
 
 # aliases
 alias d='dirs -v'
